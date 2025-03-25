@@ -11,7 +11,9 @@ QUESTION_FILE = "kcna_questions_structured.json"
 
 # 載入題庫
 def load_questions():
-    with open(QUESTION_FILE, "r", encoding="utf-8") as f:
+    base_path = os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(base_path, "kcna_questions_structured.json")
+    with open(json_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 # 首頁：選擇幾題作答
