@@ -272,7 +272,7 @@
   {
     "question": "What is the common standard for Service Meshes?",
     "options": [
-      "A. Service Mesh Speci cation (SMS)",
+      "A. Service Mesh Specification (SMS)",
       "B. Service Mesh Technology (SMT)",
       "C. Service Mesh Interface (SMI)",
       "D. Service Mesh Function (SMF)"
@@ -915,7 +915,7 @@
       "A. To provide runtime integration control when multiple runtimes are used.",
       "B. Support container replication and scaling on nodes.",
       "C. Provide an interface allowing Kubernetes to support pluggable container runtimes.",
-      "D. Allow the de nition of dynamic resource criteria across containers."
+      "D. Allow the definition of dynamic resource criteria across containers."
     ],
     "answer": "C"
   },
@@ -1033,7 +1033,7 @@
     "question": "What is a Dockerfile?",
     "options": [
       "A. A bash script that is used to automatically build a docker image.",
-      "B. A config  file that de nes which image registry a container should be pushed to.",
+      "B. A config file that defines which image registry a container should be pushed to.",
       "C. A text file that contains all the commands a user could call on the command line to assemble an image.",
       "D. An image layer created by a running container stored on the host."
     ],
@@ -1110,7 +1110,7 @@
     "answer": "C"
   },
   {
-    "question": "How many different Kubernetes service types can you de ne?",
+    "question": "How many different Kubernetes service types can you define?",
     "options": [
       "A. 2",
       "B. 3",
@@ -1153,7 +1153,7 @@
     "question": "Which of the following is a correct definition of a Helm chart?",
     "options": [
       "A. A Helm chart is a collection of YAML files bundled in a tar.gz file and can be applied without decompressing it.",
-      "B. A Helm chart is a collection of JSON files and contains all the resource de nitions to run an application on Kubernetes.",
+      "B. A Helm chart is a collection of JSON files and contains all the resource definitions to run an application on Kubernetes.",
       "C. A Helm chart is a collection of YAML files that can be applied on Kubernetes by using the kubectl tool.",
       "D. A Helm chart is similar to a package and contains all the resource de nitions to run an application on Kubernetes."
     ],
@@ -1332,10 +1332,10 @@
   {
     "question": "What's the difference between a security profile and a security context? ",
     "options": [
-      "A. Security Contexts con gure Clusters and Namespaces at runtime. Security profiles are control plane mechanisms to enforce specific",
-      "B. Security Contexts con gure Pods and Containers at runtime. Security profiles are control plane mechanisms to enforce specific settings in",
-      "C. Security Profiles con gure Pods and Containers at runtime. Security Contexts are control plane mechanisms to enforce specific settings in",
-      "D. Security Profiles con gure Clusters and Namespaces at runtime. Security Contexts are control plane mechanisms to enforce specific"
+      "A. Security Contexts configure Clusters and Namespaces at runtime. Security profiles are control plane mechanisms to enforce specific settings in the Security Context",
+      "B. Security Contexts configure Pods and Containers at runtime. Security profiles are control plane mechanisms to enforce specific settings in the Security Contex",
+      "C. Security Profiles configure Pods and Containers at runtime. Security Contexts are control plane mechanisms to enforce specific settings in the Security Profile",
+      "D. Security Profiles configure Clusters and Namespaces at runtime. Security Contexts are control plane mechanisms to enforce specific settings in the Security Prole."
     ],
     "answer": "B"
   },
