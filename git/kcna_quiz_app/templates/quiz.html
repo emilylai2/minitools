@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>KCNA 題庫答案填寫</title>
-</head>
+<head><meta charset="UTF-8"><title>KCNA 測驗進行中</title></head>
 <body>
-    <h2>第 {{ qid + 1 }} 題 / 共 {{ total }} 題</h2>
+    <h2>第 {{ qid }} 題 / 共 {{ total }} 題</h2>
     <p><strong>{{ q.question }}</strong></p>
-    <form action="{{ url_for('submit', qid=qid) }}" method="post">
+    <form method="post">
         {% for opt in q.options %}
             <div>
                 <input type="radio" name="answer" value="{{ opt[0] }}" required>
                 <label>{{ opt }}</label>
             </div>
         {% endfor %}
-        <br>
-        <button type="submit">送出</button>
+        <button type="submit">下一題</button>
     </form>
 </body>
 </html>
