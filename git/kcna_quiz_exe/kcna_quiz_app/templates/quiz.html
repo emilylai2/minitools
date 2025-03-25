@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>KCNA 測驗進行中</title></head>
+<body>
+    <h2>第 {{ qid }} 題 / 共 {{ total }} 題</h2>
+    <p><strong>{{ q.question }}</strong></p>
+    <form method="post">
+        {% for opt in q.options %}
+            <div>
+                <input type="radio" name="answer" value="{{ opt[0] }}" required>
+                <label>{{ opt }}</label>
+            </div>
+        {% endfor %}
+        <button type="submit">下一題</button>
+    </form>
+</body>
+</html>

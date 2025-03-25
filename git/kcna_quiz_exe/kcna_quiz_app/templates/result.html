@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>KCNA 測驗結果</title></head>
+<body>
+    <h2>測驗完成，你得了 {{ score }} / {{ total }} 分</h2>
+    <h3>錯誤題目：</h3>
+    <ul>
+        {% for r in details if not r.is_correct %}
+        <li>
+            <strong>{{ r.question }}</strong><br>
+            你的答案：{{ r.your }}，正確答案：{{ r.correct }} - {{ r.correct_option }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
