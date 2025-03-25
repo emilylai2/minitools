@@ -552,7 +552,7 @@
   {
     "question": "What is a DaemonSet?",
     "options": [
-      "A. It's a type of workload that ensures a speci c set of nodes run a copy of a Pod.",
+      "A. It's a type of workload that ensures a specific set of nodes run a copy of a Pod.",
       "B. It's a type of workload responsible for maintaining a stable set of replica Pods running in any node.",
       "C. It's a type of workload that needs to be run periodically on a given schedule.",
       "D. It's a type of workload that provides guarantees about ordering, uniqueness, and identity of a set of Pods."
