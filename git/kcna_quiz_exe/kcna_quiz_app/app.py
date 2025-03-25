@@ -19,6 +19,8 @@ def load_questions():
 # 首頁：選擇幾題作答
 @app.route("/", methods=["GET", "POST"])
 def index():
+    # ✅ 新增這行：清除過去的 session 測驗資料
+    session.clear()
     if request.method == "POST":
         num_questions = int(request.form["num_questions"])
         all_questions = load_questions()
