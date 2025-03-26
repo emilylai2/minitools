@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>測驗結果</title>
+    <style>
+        .correct {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .wrong {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .missed {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+        li {
+            padding: 4px;
+            margin: 3px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>測驗完成</h2>
+    <p>你的分數：{{ score }} / {{ total }}</p>
+    <hr>
+    {% for q in details %}
+        <div>
+            <h4>{{ loop.index }}. {{ q.question }}</h4>
+            <ul>
+                {% for opt in q.options %}
+                    {% set key = opt[0] %}
+                    <li
+                        {% if key == q.correct and q.is_correct %}
+                            class="correct"
+                        {% elif key == q.your and not q.is_correct %}
+                            class="wrong"
+                        {% elif key == q.correct and not q.is_correct %}
+                            class="missed"
+                        {% endif %}
+                    >
+                        {{ opt }}
+                        {% if key == q.correct %} ✅{% endif %}
+                        {% if key == q.your and not q.is_correct %} ❌{% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>

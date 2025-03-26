@@ -1,10 +1,15 @@
 from flask import Flask, render_template, request, redirect, url_for, session
+from flask_session import Session
 import json
 import random
 import os
 
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # 用於 session 儲存
+app.config['SESSION_TYPE'] = 'filesystem'  # 儲存在伺服器本地檔案中
+app.config['SESSION_FILE_DIR'] = './.flask_session/'  # session 檔案儲存路徑
+app.config['SESSION_PERMANENT'] = False
+Session(app)
 
 # 題庫檔案路徑
 QUESTION_FILE = "kcna_questions_structured.json"

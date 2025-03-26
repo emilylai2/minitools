@@ -232,10 +232,10 @@
   {
     "question": "We can extend the Kubernetes API with Kubernetes API Aggregation Layer and CRDs. What is CRD?",
     "options": [
-      "A. Custom Resource De nition",
-      "B. Custom Restricted De nition",
-      "C. Customized RUST De nition",
-      "D. Custom RUST De nition"
+      "A. Custom Resource Definition",
+      "B. Custom Restricted Definition",
+      "C. Customized RUST Definition",
+      "D. Custom RUST Definition"
     ],
     "answer": "A"
   },
@@ -510,9 +510,9 @@
     "answer": "A"
   },
   {
-    "question": "What factors in uence the Kubernetes scheduler when it places Pods on nodes?",
+    "question": "What factors influence the Kubernetes scheduler when it places Pods on nodes?",
     "options": [
-      "A. Pod memory requests, node taints, and Pod a nity.",
+      "A. Pod memory requests, node taints, and Pod affinity.",
       "B. Pod labels, node labels, and request labels.",
       "C. Node taints, node level, and Pod priority.",
       "D. Pod priority, container command, and node labels."
@@ -560,7 +560,7 @@
     "answer": "A"
   },
   {
-    "question": "What is the telemetry component that represents a series of related distributed events that encode the end-to-end request  ow through a distributed system?",
+    "question": "What is the telemetry component that represents a series of related distributed events that encode the end-to-end request  flow through a distributed system?",
     "options": [
       "A. Metrics",
       "B. Logs",
@@ -680,7 +680,7 @@
     "answer": "C"
   },
   {
-    "question": "Which persona is normally responsible for de ning, testing, and running an incident management process?",
+    "question": "Which persona is normally responsible for defining, testing, and running an incident management process?",
     "options": [
       "A. Site Reliability Engineers",
       "B. Project Managers",
@@ -715,16 +715,16 @@
       "A. Decide about the marketing strategy of the project.",
       "B. Review the pull requests in the main branch.",
       "C. Outline the project's “terms of engagement”.",
-      "D. De ne the license to be used in the project."
+      "D. Define the license to be used in the project."
     ],
     "answer": "C"
   },
   {
     "question": "What is the role of a NetworkPolicy in Kubernetes?",
     "options": [
-      "A. The ability to cryptic and obscure all tra c.",
+      "A. The ability to cryptic and obscure all traffic.",
       "B. The ability to classify the Pods as isolated and non isolated.",
-      "C. The ability to prevent loopback or incoming host tra c.",
+      "C. The ability to prevent loopback or incoming host traffic.",
       "D. The ability to log network security events."
     ],
     "answer": "B"
@@ -930,10 +930,10 @@
     "answer": "B"
   },
   {
-    "question": "In CNCF, who develops speci cations for industry standards around container formats and runtimes?",
+    "question": "In CNCF, who develops specifications for industry standards around container formats and runtimes?",
     "options": [
       "A. Open Container Initiative (OCI)",
-      "B. Linux Foundation Certi cation Group (LFCG)",
+      "B. Linux Foundation Certification Group (LFCG)",
       "C. Container Network Interface (CNI)",
       "D. Container Runtime Interface (CRI)"
     ],
@@ -1172,10 +1172,10 @@
   {
     "question": "How does Horizontal Pod autoscaling work in Kubernetes? reduces CPU or memory when the load is below. of pods when the load is below. reduces the number of pods when the load is below. when the load is below.",
     "options": [
-      "A. The Horizontal Pod Autoscaler controller adds more CPU or memory to the pods when the load is above the con gured threshold, and",
-      "B. The Horizontal Pod Autoscaler controller adds more pods when the load is above the con gured threshold, but does not reduce the number",
-      "C. The Horizontal Pod Autoscaler controller adds more pods to the speci ed DaemonSet when the load is above the con gured threshold, and",
-      "D. The Horizontal Pod Autoscaler controller adds more pods when the load is above the con gured threshold, and reduces the number of pods"
+      "A. The Horizontal Pod Autoscaler controller adds more CPU or memory to the pods when the load is above the configured threshold, and reduce CPU or memory when the load is below",
+      "B. The Horizontal Pod Autoscaler controller adds more pods when the load is above the configured threshold, but does not reduce the number of pods when the load is below",
+      "C. The Horizontal Pod Autoscaler controller adds more pods to the specified DaemonSet when the load is above the configured threshold, and reduces the number of pods whe the load is below",
+      "D. The Horizontal Pod Autoscaler controller adds more pods when the load is above the configured threshold, and reduces the number of pods when the load is below."
     ],
     "answer": "D"
   },
@@ -1310,7 +1310,7 @@
     "answer": "A"
   },
   {
-    "question": "What is the reference implementation of the OCI runtime speci cation?",
+    "question": "What is the reference implementation of the OCI runtime specification?",
     "options": [
       "A. lxc",
       "B. cri-o",
@@ -1372,7 +1372,7 @@
   {
     "question": "Which of the following sentences is true about container runtimes in Kubernetes?",
     "options": [
-      "A. If you let iptables see bridged tra c, you don't need a container runtime.",
+      "A. If you let iptables see bridged traffic, you don't need a container runtime.",
       "B. If you enable IPv4 forwarding, you don't need a container runtime.",
       "C. Container runtimes are deprecated, you must install CRI on each node",
       "D. You must install a container runtime on each node to run pods on it."
@@ -1490,7 +1490,7 @@
     "answer": "D"
   },
   {
-    "question": "Which of the following scenarios would bene t the most from a service mesh architecture?",
+    "question": "Which of the following scenarios would benefit the most from a service mesh architecture?",
     "options": [
       "A. A few applications with hundreds of pod replicas running in multiple clusters, each one providing multiple services.",
       "B. Thousands of distributed applications running in a single cluster, each one providing multiple services.",
@@ -1563,9 +1563,9 @@
     "question": "What are the advantages of adopting a GitOps approach for your deployments?",
     "options": [
       "A. Reduce failed deployments, operational costs, and fragile release processes.",
-      "B. Reduce failed deployments, con guration drift, and fragile release processes.",
+      "B. Reduce failed deployments, configuration drift, and fragile release processes.",
       "C. Reduce failed deployments, operational costs, and learn git.",
-      "D. Reduce failed deployments, con guration drift and improve your reputation."
+      "D. Reduce failed deployments, configuration drift and improve your reputation."
     ],
     "answer": "B"
   },
