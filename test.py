@@ -7,7 +7,7 @@ from tkinter import messagebox
 
 WRONG_FILE = "kcsa_wrong_questions.json"
 
-with open("kcsa_questions_sorted.json", "r", encoding="utf-8") as f:
+with open("question.js", "r", encoding="utf-8") as f:
     all_questions = json.load(f)
 
 if Path(WRONG_FILE).exists():
