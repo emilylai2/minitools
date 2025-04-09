@@ -1,11 +1,14 @@
-# Flask Web 版練習系統
+# Flask Web 版練習系統（使用伺服器端 Session）
 from flask import Flask, render_template_string, request, redirect, url_for, session
+from flask_session import Session
 import json
 import random
 import os
 
 app = Flask(__name__)
 app.secret_key = 'kcsa-secret-key'
+app.config['SESSION_TYPE'] = 'filesystem'  # ✅ 使用伺服器端 session
+Session(app)
 
 # 載入題庫
 with open("kcsa_questions_sorted.json", encoding="utf-8") as f:
